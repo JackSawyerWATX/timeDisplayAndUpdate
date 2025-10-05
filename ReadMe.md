@@ -15,7 +15,7 @@ This project is a simple JavaScript program that displays a **greeting based on 
 
 ## Files
 
-- `greeting.js` – Main JavaScript file containing all the code.
+- `script.js` – Main JavaScript file containing all the code.
 
 ---
 
@@ -60,4 +60,4 @@ Global
 3. Run the program using Node.js:
 
 ```bash
-node greeting.js
+node script.js
