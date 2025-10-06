@@ -16,19 +16,23 @@ function calculateTime() {
   const formattedSeconds = seconds.toString().padStart(2, "0");
   const ampm = hour >= 12 ? "PM" : "AM"
 
-//  console.log(`Current time: ${hour}:${formattedMinutes}:${formattedSeconds}`);
+  //  console.log(`Current time: ${hour}:${formattedMinutes}:${formattedSeconds}`);
 
   const displayHour = hour % 12 === 0 ? 12 : hour % 12;
 
   let greeting;
-  if (hour < 12) {
-    greeting = "Good Morning.";
-  } else if (hour <= 18) {
-    greeting = "Good Afternoon.";
+  if (hour < 6) {
+    greeting = "Good Night";
+  } else if (hour <= 12) {
+    greeting = "Good Morning";
+  } else if (hour <= 17) {
+    greeting = "Good Afternoon";
+  } else if (hour <= 20) {
+    greeting = "Good Evening";
   } else {
-    greeting = "Good Evening.";
+    greeting = "Good Night";
   }
-  
+
   return `${greeting} -- ${displayHour}:${formattedMinutes}:${formattedSeconds} ${ampm}`;
 }
 
