@@ -23,11 +23,11 @@ function calculateTime() {
   let greeting;
   if (hour < 6) {
     greeting = "Good Night";
-  } else if (hour <= 12) {
+  } else if (hour < 12) {
     greeting = "Good Morning";
-  } else if (hour <= 17) {
+  } else if (hour < 17) {
     greeting = "Good Afternoon";
-  } else if (hour <= 20) {
+  } else if (hour < 20) {
     greeting = "Good Evening";
   } else {
     greeting = "Good Night";
